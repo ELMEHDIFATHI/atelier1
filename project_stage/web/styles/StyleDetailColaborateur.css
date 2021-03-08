@@ -1,0 +1,125 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+}
+#detail_colaborateur{
+	width: 100%;
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#detail_colaborateur>#search{
+	display: flex;
+	width: 80%;
+}
+#detail_colaborateur>#search>input{
+	width: 100%;
+	height: 40px;
+	border:1px solid #ccc;
+	padding: 10px;
+	font-size: 24px;
+	border-radius: 4px;
+}
+#detail_colaborateur>#data{
+	margin-top: 20px;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: monospace;
+}
+#detail_colaborateur>#data>div{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+#detail_colaborateur>#data>div>p:first-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #34647f;
+	color: white;
+	font-size: 24px;
+	padding: 30px 0px;
+}
+#detail_colaborateur>#data>div>p:nth-child(2){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	padding: 10px 0px;
+}
+#detail_colaborateur>#data>div>div{
+	display: flex;
+	padding: 20px;
+	background-color: #124;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*overflow: auto;*/
+	/*max-height: 300px;*/
+}
+
+
+
+#detail_colaborateur>#data>div>div>table{
+	border-collapse: collapse;
+	width: 90%;
+}
+#detail_colaborateur>#data>div>div>table tr td,
+#detail_colaborateur>#data>div>div>table tr th{
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+#detail_colaborateur>#data>div>div>table tr th{
+	color: black;
+}
+#detail_colaborateur>#data>div>div>table tr:nth-child(odd){
+	background-color:#3464ff;
+}
+#detail_colaborateur>#data>div>div>table tr:nth-child(even){
+	background-color:#34647f;
+}
+#detail_colaborateur>#data>div>div>table tr:hover{
+	background-color: #aaa;
+}
+
+#detail_colaborateur>#data>div>div>table tr:first-child{
+	background-color: #eee;
+	color: black;
+}
+#detail_colaborateur>#data>div>div>table tr:first-child:hover{
+	background-color: #eee;
+	color: black;
+}
+#detail_colaborateur>#data>div>div>table tr td button{
+	color: white;
+	background-color: black;
+	border:1px solid black;
+	border-radius: 2px;
+	padding: 5px;
+}
+#detail_colaborateur>#data>div>div>table tr td button:hover{
+	background-color: #eee;
+	color: black;
+}
+#detail_colaborateur>#data>div>div>table tr td a{
+	color: black;
+	background-color: tomato;
+	border:1px solid black;
+	border-radius: 2px;
+	padding:4px; 
+	text-decoration: none;
+}
+#detail_colaborateur>#data>div>div>table tr td a:hover{
+	background-color: red;
+}

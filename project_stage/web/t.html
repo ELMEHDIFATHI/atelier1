@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {}
+
+        .div1 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .div1 input {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inscription</h1>
+    <div class="div1">
+        <div>
+            <label for="">nom</label>
+            <input type="text" id="nom">
+        </div>
+        <div>
+            <label for="">prenom</label>
+            <input type="text" id="prenom">
+        </div>
+    </div>
+    <div class="div1">
+        <label for="">age</label>
+        <input type="text" id="age">
+    </div>
+    <div class="div1">
+        <label for="">sexe</label>
+        <input type="radio" id="homme" name="sexe" value="h">homme
+
+        <input type="radio" id="femme" name="sexe" value="f" checked>femme
+
+
+    </div>
+    <div class="div1">
+        <label for="">nationalite</label>
+        <input type="radio" id="maroc" name="nati" value="m" onclick="ch()" checked>marocaine
+        <input type="radio" id="etranger" name="nati" value="e" onclick="ch()">etranger
+    </div>
+    <div id="pays" style="visibility: hidden;">
+        <label for="">pays</label>
+        <select name="s" id="s">
+            <option value="canada">canada</option>
+            <option value="france">france</option>
+            <option value="belgique">la belgique</option>
+            <option value="">allmangne</option>
+
+
+        </select>
+
+    </div>
+    <div>
+        <label for="">Intere</label>
+        <div>
+            <input type="checkbox" class="1" value="sport">sport
+            <input type="checkbox" class="1" value="voyage">voyage
+            <input type="checkbox" class="1" value="lecteur">lecture
+
+        </div>
+        <div>
+            <input type="checkbox" class="1" value="travaille">travaille
+            <input type="checkbox" class="1" value="amoure">amoure
+            <input type="checkbox" class="1" value="livration">livration
+
+        </div>
+
+
+    </div>
+    <div>
+        <button onclick="afficher()">afficher</button>
+    </div>
+    <div id="affichage">
+
+    </div>
+
+    <script>
+        function ch() {
+            if (document.getElementById("maroc").checked) {
+                document.getElementById("pays").style.visibility = "hidden";
+            } else if (document.getElementById("etranger").checked) {
+                document.getElementById("pays").style.visibility = "visible";
+            }
+        }
+
+        function afficher() {
+            var v1 = document.getElementById("nom").value;
+            var v2 = document.getElementById("prenom").value;
+            var v3 = document.getElementById("age").value;
+            var v4;
+            if (document.getElementById("homme").checked) {
+
+                v4 = document.getElementById("homme").value;
+            } else if (document.getElementById("femme").checked) {
+
+                v4 = document.getElementById("femme").value;
+            }
+
+            var v5 ;
+            if (document.getElementById("maroc").checked) {
+
+                v5 = document.getElementById("maroc").value;
+            } else if (document.getElementById("etranger").checked) {
+
+                v5 = document.getElementById("etranger").value;
+            }
+            var s = document.getElementsByClassName("1");
+            var f = '';
+    
+            for (var i = 0; i <6; i++) {
+                if (s[i].checked == true) {
+                    f+= "" + s[i].value;
+                
+                }
+            
+             
+            
+
+
+            }
+
+            document.getElementById("affichage").innerHTML="le nom :"+v1 +"l eprenom :"+v2 +" l age" +v3 + v4 + v5 + f;
+      
+
+
+
+           
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

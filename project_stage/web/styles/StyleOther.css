@@ -1,0 +1,191 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top:5%;
+	font-family: monospace;
+}
+.container>div{
+	margin-bottom: 30px;
+}
+.container>.search{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container>.search>input{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	font-size: 24px;
+}
+.container>.cont_edit{
+	
+	 position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;/*flex*/
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0,0,0,0.8);
+}
+.container>.add{
+	margin-top: -10px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;/*flex*/
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0,0,0,0.8);
+}
+.container>.add,
+.container>.cont_edit>.edit{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+}
+
+.container>.add>button,
+.container>.cont_edit>.edit>p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	background-color:#34647f;
+	width: 100%;
+	padding: 10px;
+	font-size: 32px;
+}
+.container>.add>button{
+	cursor:pointer;
+}
+.container>.add>.form,
+.container>.cont_edit>.edit>.form{
+	border-top: 10px solid black;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:#eee; 
+	padding: 20px 10px;
+	font-size: 18px
+}
+.container>.add>.form>.child_form,
+.container>.cont_edit>.edit>.form>.child_form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.container>.add>.form>.child_form:last-child,
+.container>.cont_edit>.edit>.form>.child_form:last-child{
+	display: flex;
+	flex-direction: row;
+}
+.container>.add>.form>.child_form:last-child>div:first-child,
+.container>.cont_edit>.edit>.form>.child_form:last-child>div:first-child{
+	flex-grow: 1;
+}
+.container>.add>.form>.child_form:last-child button,
+.container>.cont_edit>.edit>.form>.child_form:last-child button{
+	width: 100px;
+	height: 35px;
+	background-color: black;
+	color:white;
+	border-radius: 5px;
+	border:1px solid black;
+}
+.container>.add>.form>.child_form:last-child input{
+    width: 100px;
+	height: 35px;
+	background-color: black;
+	color:white;
+	border-radius: 5px;
+	border:1px solid black;
+}
+.container>.cont_edit>.edit>.form>.child_form:last-child input{
+	width: 100px;
+	height: 35px;
+	background-color: black;
+	color:white;
+	border-radius: 5px;
+	border:1px solid black;
+}
+.container>.add>.form>.child_form input,
+.container>.cont_edit>.edit>.form>.child_form input,
+.container>.add>.form>.child_form select,
+.container>.cont_edit>.edit>.form>.child_form select{
+	width: 100%;
+	height: 35px;
+	padding: 10px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+}
+.container>.add>.form>.child_form:last-child:last-child,
+.container>.cont_edit>.edit>.form>.child_form:last-child:last-child{
+	margin-bottom: 0;
+}
+.container>.data{
+	width: 80%;
+}
+.container>.data>table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.container>.data>table tr td,
+.container>.data>table tr th{
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+.container>.data>table tr:nth-child(odd){
+	background-color:#3464ff;
+}
+.container>.data>table tr:nth-child(even){
+	background-color:#34647f;
+
+}
+.container>.data>table tr:hover{
+	background-color: #aaa;
+}
+
+.container>.data>table tr td button{
+	color: white;
+	background-color: black;
+	border:1px solid black;
+	border-radius: 2px;
+	padding: 5px;
+}
+.container>.data>table tr td button:hover{
+	background-color: #eee;
+	color: black;
+}
+.container>.data>table tr td a{
+	color: black;
+	background-color: tomato;
+	border:1px solid black;
+	border-radius: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.container>.data>table tr td a:hover{
+	background-color: red;
+}
+
