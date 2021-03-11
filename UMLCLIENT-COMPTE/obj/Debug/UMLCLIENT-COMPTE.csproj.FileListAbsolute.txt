@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\UMLCLIENT-COMPTE\obj\Debug\UMLCLIENT-COMPTE.csprojAssemblyReference.cache
+C:\Users\user\source\repos\UMLCLIENT-COMPTE\obj\Debug\UMLCLIENT-COMPTE.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\UMLCLIENT-COMPTE\bin\Debug\UMLCLIENT-COMPTE.exe.config
+C:\Users\user\source\repos\UMLCLIENT-COMPTE\bin\Debug\UMLCLIENT-COMPTE.exe
+C:\Users\user\source\repos\UMLCLIENT-COMPTE\bin\Debug\UMLCLIENT-COMPTE.pdb
+C:\Users\user\source\repos\UMLCLIENT-COMPTE\obj\Debug\UMLCLIENT-COMPTE.exe
+C:\Users\user\source\repos\UMLCLIENT-COMPTE\obj\Debug\UMLCLIENT-COMPTE.pdb
